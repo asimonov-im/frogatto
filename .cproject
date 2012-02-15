@@ -165,16 +165,16 @@
 								<option id="com.qnx.qcc.option.linker.security.1128083776" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.pie.967698566" name="Position Independent Executable (-pie)" superClass="com.qnx.qcc.option.linker.pie" value="false" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.17276624" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="${workspace_loc:/boost_iostreams/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/boost_regex/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/boost_system/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/SDL_image/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/SDL_mixer/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/SDL_ttf/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/SDL12/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/vorbis/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/boost_iostreams/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/boost_regex/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/boost_system/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL_image/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL_mixer/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL_ttf/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL12/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/vorbis/Device-Release}"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.debug.1041535704" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
 								<inputType id="com.qnx.qcc.inputType.linker.1485217912" superClass="com.qnx.qcc.inputType.linker">
