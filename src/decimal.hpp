@@ -3,6 +3,7 @@
 
 #include <iosfwd>
 #include <inttypes.h>
+#include <math.h>
 
 static const int64_t DECIMAL_PRECISION = 1000000;
 static const int64_t DECIMAL_PLACES = 6;
@@ -13,7 +14,7 @@ public:
 	static decimal from_int(int64_t v) { return decimal(v*DECIMAL_PRECISION); }
 	decimal() : value_(0) {}
 	explicit decimal(int64_t value) : value_(value) {}
-	explicit decimal(double value) : value_(value*DECIMAL_PRECISION) {}
+	explicit decimal(double value) : value_(llround(value*DECIMAL_PRECISION)) {}
 
 	int64_t value() const { return value_; }
 	int as_int() const { return value_/DECIMAL_PRECISION; }
