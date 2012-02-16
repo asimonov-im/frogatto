@@ -69,7 +69,7 @@
        <asset path="${workspace_loc:/SDL_ttf/Device-Debug/libSDL_ttf.so}" type="Qnx/Elf">lib/libSDL_ttf.so</asset>
        <asset path="${workspace_loc:/vorbis/Device-Debug/libvorbis.so}" type="Qnx/Elf">lib/libvorbis.so</asset>
        <asset path="${workspace_loc:/ogg/Device-Debug/libogg.so}" type="Qnx/Elf">lib/libogg.so</asset>
-       <asset path="${QNX_TARGET}/../qnx6/${CPUVARDIR}/usr/lib/libbps.so.3" type="Qnx/Elf">lib/libbps.so.3</asset>
+       <!-- <asset path="${QNX_TARGET}/../qnx6/${CPUVARDIR}/usr/lib/libbps.so.3" type="Qnx/Elf">lib/libbps.so.3</asset> -->
     </configuration>
     <configuration id="com.qnx.qcc.configuration.exe.release.1548331336" name="Device-Release">
        <platformArchitecture>armle-v7</platformArchitecture>

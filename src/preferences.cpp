@@ -39,7 +39,7 @@ namespace preferences {
 		bool resizable_ = false;
 		bool debug_ = true;
 		bool reverse_ab_ = false;
-		bool show_fps_ = false;
+		bool show_fps_ = true;
 		int frame_time_millis_ = 20;
 
 		std::string level_path_ = "data/level/";
@@ -129,7 +129,7 @@ namespace preferences {
 		int actual_screen_width_ = 1024;
 		int actual_screen_height_ = 600;
 
-		bool load_compiled_ = false;
+		bool load_compiled_ = true;
 		bool use_fbo_ = true;
 		bool use_bequ_ = true;
 #else
