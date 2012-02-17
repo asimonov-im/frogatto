@@ -33,11 +33,11 @@
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.includePath.1546307415" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_headers}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_mixer}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_ttf}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_1_48_0}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.1499473386" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -127,11 +127,11 @@
 								</option>
 								<option id="com.qnx.qcc.option.compiler.pie.1572086540" name="Position Independent Executable (-fPIE)" superClass="com.qnx.qcc.option.compiler.pie" value="false" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1562338737" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_headers}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_mixer}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_ttf}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_1_48_0}&quot;"/>
 								</option>
 								<option id="com.qnx.qcc.option.compile.debug.1839611290" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<inputType id="com.qnx.qcc.inputType.compiler.1378328432" superClass="com.qnx.qcc.inputType.compiler"/>
@@ -224,11 +224,11 @@
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.includePath.1913892316" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_headers}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_mixer}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_ttf}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_1_48_0}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.433389246" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -320,11 +320,11 @@
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.includePath.1344252748" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_headers}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_mixer}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_ttf}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_1_48_0}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.1032437754" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -415,11 +415,11 @@
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.includePath.1395437262" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_headers}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_mixer}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_ttf}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_1_48_0}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.916479184" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -510,11 +510,11 @@
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.includePath.1606510034" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_headers}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_mixer}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_ttf}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_1_48_0}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.620972611" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -606,11 +606,11 @@
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.includePath.146710406" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_headers}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL12/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_mixer}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_ttf}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/boost_1_48_0}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.789045810" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
