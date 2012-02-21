@@ -27,6 +27,7 @@
 								<option id="com.qnx.qcc.option.compiler.security.1250854830" name="Enhanced Security (-fstack-protector-all)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.301545042" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="TARGET_BLACKBERRY"/>
+									<listOptionValue builtIn="false" value="_REENTRANT"/>
 									<listOptionValue builtIn="false" value="__PLAYBOOK__"/>
 									<listOptionValue builtIn="false" value="SDL_VIDEO_OPENGL_ES"/>
 									<listOptionValue builtIn="false" value="_LITTLE_ENDIAN"/>
@@ -38,6 +39,10 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_mixer}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_ttf}&quot;"/>
+								</option>
+								<option id="com.qnx.qcc.option.compiler.qccoptions.44682257" name="QCC Options" superClass="com.qnx.qcc.option.compiler.qccoptions" valueType="stringList">
+									<listOptionValue builtIn="false" value="-fthreadsafe-statics"/>
+									<listOptionValue builtIn="false" value="-fno-inline-functions"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.1499473386" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -81,6 +86,11 @@
 									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Debug}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/vorbis/Device-Debug}"/>
 								</option>
+								<option id="com.qnx.qcc.option.linker.qccoptions.878688474" name="QCC Options" superClass="com.qnx.qcc.option.linker.qccoptions" valueType="stringList">
+									<listOptionValue builtIn="false" value="-fthreadsafe-statics"/>
+									<listOptionValue builtIn="false" value="-fno-inline-functions"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.symbols.1023288872" name="Symbol options" superClass="com.qnx.qcc.option.linker.symbols" value="com.qnx.qcc.option.linker.symbols.all" valueType="enumerated"/>
 								<inputType id="com.qnx.qcc.inputType.linker.2062232873" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -230,6 +240,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_image}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL_ttf}&quot;"/>
 								</option>
+								<option id="com.qnx.qcc.option.compiler.profile.795239854" name="Build for Profiling (Call Count) (-p)" superClass="com.qnx.qcc.option.compiler.profile" value="true" valueType="boolean"/>
 								<inputType id="com.qnx.qcc.inputType.compiler.433389246" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
 							<tool errorParsers="" id="com.qnx.qcc.tool.assembler.1608432054" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
@@ -262,17 +273,19 @@
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.776703634" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.1247014846" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="${workspace_loc:/boost_iostreams/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/boost_regex/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/boost_system/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/SDL_image/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/SDL_mixer/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/SDL_ttf/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/SDL12/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Debug}"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/vorbis/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/boost_iostreams/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/boost_regex/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/boost_system/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL_image/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL_mixer/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL_ttf/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL12/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/vorbis/Device-Profile}"/>
 								</option>
+								<option id="com.qnx.qcc.option.linker.profile.1803162375" name="Build for Profiling (Call Count) (-p)" superClass="com.qnx.qcc.option.linker.profile" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.symbols.1663361671" name="Symbol options" superClass="com.qnx.qcc.option.linker.symbols" value="com.qnx.qcc.option.linker.symbols.all" valueType="enumerated"/>
 								<inputType id="com.qnx.qcc.inputType.linker.1397724869" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -675,6 +688,7 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="frogatto.null.1207985142" name="frogatto"/>
 	</storageModule>
+	<storageModule moduleId="refreshScope"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
 		<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.debug.599230539">
@@ -699,5 +713,4 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
 </cproject>

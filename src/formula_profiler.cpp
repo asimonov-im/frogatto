@@ -38,19 +38,20 @@ const size_t max_samples = 10000;
 
 void sigprof_handler(int sig)
 {
-	if(handler_disabled || !pthread_equal(main_thread, pthread_self())) {
-		return;
-	}
-
-	if(num_samples == max_samples) {
-		return;
-	}
-
-	if(event_call_stack.empty()) {
-		++empty_samples;
-	} else {
-		event_call_stack_samples[num_samples++] = event_call_stack.back();
-	}
+	fprintf(stderr, "sigprof_handler\n");
+//	if(handler_disabled || !pthread_equal(main_thread, pthread_self())) {
+//		return;
+//	}
+//
+//	if(num_samples == max_samples) {
+//		return;
+//	}
+//
+//	if(event_call_stack.empty()) {
+//		++empty_samples;
+//	} else {
+//		event_call_stack_samples[num_samples++] = event_call_stack.back();
+//	}
 }
 
 }
@@ -66,13 +67,24 @@ manager::manager(const char* output_file)
 		profiler_on = true;
 		output_fname = output_file;
 
-		signal(SIGPROF, sigprof_handler);
+//		struct sigaction act;
+//		sigset_t set;
+//		sigemptyset( &set );
+//		sigaddset( &set, SIGALRM);
+//		act.sa_flags = 0;
+//		act.sa_mask = set;
+//		act.sa_handler = &sigprof_handler;
+//		sigaction(SIGALRM, &act, NULL);
+
+//		signal(SIGPROF, sigprof_handler);
+		signal(SIGALRM, sigprof_handler);
 
 		struct itimerval timer;
 		timer.it_interval.tv_sec = 0;
 		timer.it_interval.tv_usec = 10000;
 		timer.it_value = timer.it_interval;
-		setitimer(ITIMER_PROF, &timer, 0);
+//		setitimer(ITIMER_PROF, &timer, 0);
+		setitimer(ITIMER_REAL, &timer, 0);
 	}
 }
 
@@ -81,7 +93,8 @@ manager::~manager()
 	if(profiler_on){
 		struct itimerval timer;
 		memset(&timer, 0, sizeof(timer));
-		setitimer(ITIMER_PROF, &timer, 0);
+//		setitimer(ITIMER_PROF, &timer, 0);
+		setitimer(ITIMER_REAL, &timer, 0);
 
 		std::map<std::string, int> samples_map;
 

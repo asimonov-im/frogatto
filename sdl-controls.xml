@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <emulation version="1">
+<touchscreen x="350" y="0" width="256" height="600"/>
 <key x="0" y="0" width="100" height="100" sym="27" scancode="27"/>
 <key x="0" y="100" width="100" height="100" sym="13" scancode="13"/>
 <key x="0" y="500" width="100" height="100" sym="97" scancode="97"/>
