@@ -33,6 +33,14 @@ manager::~manager() {
 	joysticks.clear();
 }
 
+bool connected() {
+	if(!preferences::use_joystick()) {
+		return false;
+	} else {
+		return !joysticks.empty();
+	}
+}
+
 void update() {
 	if(preferences::use_joystick()) {
 		SDL_JoystickUpdate();
