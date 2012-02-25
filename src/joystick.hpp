@@ -10,6 +10,7 @@ struct manager {
 	~manager();
 };
 
+bool connected();
 void update();
 
 bool up();

@@ -11,6 +11,10 @@
 #include "string_utils.hpp"
 #include "wml_node.hpp"
 
+#if defined(TARGET_BLACKBERRY)
+#include "joystick.hpp"
+#endif
+
 namespace game_logic
 {
 
@@ -34,8 +38,10 @@ variant get_constant(const std::string& id)
 		return variant(0);
 #endif
 	} else if(id == "IPHONE_SYSTEM") {
-#if TARGET_OS_HARMATTAN || TARGET_OS_IPHONE || TARGET_BLACKBERRY
+#if TARGET_OS_HARMATTAN || TARGET_OS_IPHONE
 		return variant(1);
+#elif TARGET_BLACKBERRY
+		return variant(joystick::connected() ? 0 : 1);
 #else
 		return variant(preferences::sim_iphone() ? 1 : 0);
 #endif
