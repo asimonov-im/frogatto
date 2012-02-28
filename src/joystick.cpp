@@ -57,7 +57,7 @@ bool up() {
 		for(int n = 0; n != nhats; ++n) {
 			const Uint8 state = SDL_JoystickGetHat(j, n);
 #ifdef __PLAYBOOK__
-			if (n == 0) {
+			if (n == 1) {
 				switch(state) {
 				case SDL_HAT_RIGHT:
 				case SDL_HAT_RIGHTDOWN:
@@ -98,7 +98,7 @@ bool down() {
 		for(int n = 0; n != nhats; ++n) {
 			const Uint8 state = SDL_JoystickGetHat(j, n);
 #ifdef __PLAYBOOK__
-			if (n == 0) {
+			if (n == 1) {
 				switch(state) {
 				case SDL_HAT_LEFT:
 				case SDL_HAT_LEFTDOWN:
@@ -139,7 +139,7 @@ bool left() {
 		for(int n = 0; n != nhats; ++n) {
 			const Uint8 state = SDL_JoystickGetHat(j, n);
 #ifdef __PLAYBOOK__
-			if (n == 0) {
+			if (n == 1) {
 				switch(state) {
 				case SDL_HAT_UP:
 				case SDL_HAT_LEFTUP:
@@ -180,7 +180,7 @@ bool right() {
 		for(int n = 0; n != nhats; ++n) {
 			const Uint8 state = SDL_JoystickGetHat(j, n);
 #ifdef __PLAYBOOK__
-			if (n == 0) {
+			if (n == 1) {
 				switch(state) {
 				case SDL_HAT_DOWN:
 				case SDL_HAT_LEFTDOWN:
