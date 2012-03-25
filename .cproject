@@ -51,6 +51,7 @@
 								<option id="com.qnx.qcc.option.linker.langcpp.533814308" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.1090214149" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
 									<listOptionValue builtIn="false" value="boost_iostreams"/>
+									<listOptionValue builtIn="false" value="filter"/>
 									<listOptionValue builtIn="false" value="boost_regex"/>
 									<listOptionValue builtIn="false" value="boost_system"/>
 									<listOptionValue builtIn="false" value="SDL_image"/>
@@ -65,6 +66,7 @@
 								<option id="com.qnx.qcc.option.linker.security.849284466" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.627649448" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="${workspace_loc:/boost_iostreams/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/filter/Device-Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/boost_regex/Device-Debug}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/boost_system/Device-Debug}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Device-Debug}"/>
@@ -143,6 +145,7 @@
 								<option id="com.qnx.qcc.option.linker.langcpp.1163970891" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.709218829" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
 									<listOptionValue builtIn="false" value="boost_iostreams"/>
+									<listOptionValue builtIn="false" value="filter"/>
 									<listOptionValue builtIn="false" value="boost_regex"/>
 									<listOptionValue builtIn="false" value="boost_system"/>
 									<listOptionValue builtIn="false" value="SDL_image"/>
@@ -158,6 +161,7 @@
 								<option id="com.qnx.qcc.option.linker.pie.967698566" name="Position Independent Executable (-pie)" superClass="com.qnx.qcc.option.linker.pie" value="false" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.17276624" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="${workspace_loc:/boost_iostreams/Device-Release}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/filter/Device-Release}&quot;"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/boost_regex/Device-Release}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/boost_system/Device-Release}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Device-Release}"/>

@@ -56,31 +56,12 @@ bool up() {
 		const int nhats = SDL_JoystickNumHats(j);
 		for(int n = 0; n != nhats; ++n) {
 			const Uint8 state = SDL_JoystickGetHat(j, n);
-#ifdef __PLAYBOOK__
-			if (n == 1) {
-				switch(state) {
-				case SDL_HAT_RIGHT:
-				case SDL_HAT_RIGHTDOWN:
-				case SDL_HAT_RIGHTUP:
-					return true;
-				}
-			}
-			else {
-				switch(state) {
-				case SDL_HAT_UP:
-				case SDL_HAT_RIGHTUP:
-				case SDL_HAT_LEFTUP:
-						return true;
-				}
-			}
-#else
 			switch(state) {
 			case SDL_HAT_UP:
 			case SDL_HAT_RIGHTUP:
 			case SDL_HAT_LEFTUP:
 					return true;
 			}
-#endif
 		}
 
 	}
@@ -97,31 +78,12 @@ bool down() {
 		const int nhats = SDL_JoystickNumHats(j);
 		for(int n = 0; n != nhats; ++n) {
 			const Uint8 state = SDL_JoystickGetHat(j, n);
-#ifdef __PLAYBOOK__
-			if (n == 1) {
-				switch(state) {
-				case SDL_HAT_LEFT:
-				case SDL_HAT_LEFTDOWN:
-				case SDL_HAT_LEFTUP:
-					return true;
-				}
-			}
-			else {
-				switch(state) {
-				case SDL_HAT_DOWN:
-				case SDL_HAT_RIGHTDOWN:
-				case SDL_HAT_LEFTDOWN:
-						return true;
-				}
-			}
-#else
 			switch(state) {
 			case SDL_HAT_DOWN:
 			case SDL_HAT_RIGHTDOWN:
 			case SDL_HAT_LEFTDOWN:
 					return true;
 			}
-#endif
 		}
 
 	}
@@ -138,33 +100,13 @@ bool left() {
 		const int nhats = SDL_JoystickNumHats(j);
 		for(int n = 0; n != nhats; ++n) {
 			const Uint8 state = SDL_JoystickGetHat(j, n);
-#ifdef __PLAYBOOK__
-			if (n == 1) {
-				switch(state) {
-				case SDL_HAT_UP:
-				case SDL_HAT_LEFTUP:
-				case SDL_HAT_RIGHTUP:
-					return true;
-				}
-			}
-			else {
-				switch(state) {
-				case SDL_HAT_LEFT:
-				case SDL_HAT_LEFTDOWN:
-				case SDL_HAT_LEFTUP:
-						return true;
-				}
-			}
-#else
 			switch(state) {
 			case SDL_HAT_LEFT:
 			case SDL_HAT_LEFTDOWN:
 			case SDL_HAT_LEFTUP:
 					return true;
 			}
-#endif
 		}
-
 	}
 
 	return false;
@@ -179,31 +121,12 @@ bool right() {
 		const int nhats = SDL_JoystickNumHats(j);
 		for(int n = 0; n != nhats; ++n) {
 			const Uint8 state = SDL_JoystickGetHat(j, n);
-#ifdef __PLAYBOOK__
-			if (n == 1) {
-				switch(state) {
-				case SDL_HAT_DOWN:
-				case SDL_HAT_LEFTDOWN:
-				case SDL_HAT_RIGHTDOWN:
-					return true;
-				}
-			}
-			else {
-				switch(state) {
-				case SDL_HAT_RIGHT:
-				case SDL_HAT_RIGHTDOWN:
-				case SDL_HAT_RIGHTUP:
-						return true;
-				}
-			}
-#else
 			switch(state) {
 			case SDL_HAT_RIGHT:
 			case SDL_HAT_RIGHTDOWN:
 			case SDL_HAT_RIGHTUP:
 					return true;
 			}
-#endif
 		}
 	}
 
@@ -219,19 +142,15 @@ bool button(int n) {
 	if (joysticks.size() > 0) {
 		switch (n) {
 		case 0:
-			if (SDL_JoystickGetButton(joysticks[0], 0) // WiiMote A
-					|| SDL_JoystickGetButton(joysticks[0], 7)) // Classic Controller a
+			if (SDL_JoystickGetButton(joysticks[0], 4) || SDL_JoystickGetButton(joysticks[1], 4)) // switch weapons
 				return true;
 			break;
 		case 1:
-			if (SDL_JoystickGetButton(joysticks[0], 2) // WiiMote 1
-					|| SDL_JoystickGetButton(joysticks[0], 8)) // Classic Controller b
+			if (SDL_JoystickGetButton(joysticks[0], 2) || SDL_JoystickGetButton(joysticks[1], 2)) // jump
 				return true;
 			break;
 		case 2:
-			if (SDL_JoystickGetButton(joysticks[0], 3) // WiiMote 2
-					|| SDL_JoystickGetButton(joysticks[0], 17) // Classic Controller R
-					|| SDL_JoystickGetButton(joysticks[0], 15)) // Classic Controller zR
+			if (SDL_JoystickGetButton(joysticks[0], 3) || SDL_JoystickGetButton(joysticks[1], 3)) // attack
 				return true;
 			break;
 		}
